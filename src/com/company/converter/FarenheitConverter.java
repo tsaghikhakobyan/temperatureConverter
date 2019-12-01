@@ -11,14 +11,14 @@ public class FarenheitConverter implements Converter {
     public AbstractTemperatureUnit convert(AbstractTemperatureUnit unit) {
         double temp;
         if (unit instanceof Celsius) {
-            temp = unit.getTemerature() * 9 / 5 + 32;
+            temp = unit.getTemperature() * 9 / 5 + 32;
         } else if (unit instanceof Kelvin) {
-            temp = unit.getTemerature() * 9 / 5 - 459.67;
+            temp = unit.getTemperature() * 9 / 5 - 459.67;
         } else {
-            temp = unit.getTemerature();
+            temp = unit.getTemperature();
         }
         Farenheit farenheit = new Farenheit();
-        farenheit.setTemerature(temp);
+        farenheit.setTemperature(temp);
         return farenheit;
     }
 }

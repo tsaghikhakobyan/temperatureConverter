@@ -1,10 +1,10 @@
 package com.company.models.temperature;
 
 public abstract class AbstractTemperatureUnit {
-    private double temerature;
+    private double temperature;
 
-    public AbstractTemperatureUnit(double temerature) {
-        this.temerature = temerature;
+    public AbstractTemperatureUnit(double temperature) {
+        this.temperature = temperature;
     }
 
     public AbstractTemperatureUnit() {
@@ -12,11 +12,11 @@ public abstract class AbstractTemperatureUnit {
 
     public abstract void printTemperature();
 
-    public double getTemerature() {
-        return temerature;
+    public double getTemperature() {
+        return temperature;
     }
 
-    public void setTemerature(double temerature) {
-        this.temerature = temerature;
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
     }
 }

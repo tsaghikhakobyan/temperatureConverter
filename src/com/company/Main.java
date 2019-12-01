@@ -5,18 +5,15 @@ import com.company.converter.FarenheitConverter;
 import com.company.models.temperature.AbstractTemperatureUnit;
 import com.company.models.temperature.Kelvin;
 
-import java.util.ArrayList;
-
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Converter converter = new FarenheitConverter();
-        FarenheitConverter farenheitConverter = new FarenheitConverter();
+        Converter fahrenheitConverter = new FarenheitConverter();
         Kelvin kelvin = new Kelvin();
-        kelvin.setTemerature(100);
-        AbstractTemperatureUnit convert = farenheitConverter.convert(kelvin);
+        kelvin.setTemperature(100);
+        AbstractTemperatureUnit convert = fahrenheitConverter.convert(kelvin);
         convert.printTemperature();
     }
 }
